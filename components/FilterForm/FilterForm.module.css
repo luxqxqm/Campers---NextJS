@@ -150,7 +150,6 @@ input[type="radio"]:checked {
 .clearBtn:hover:not(:disabled) {
   border-color: var(--green-hover);
   color: var(--green-hover);
-  background: var(--inputs);
 }
 
 .clearIcon {
