@@ -6,6 +6,9 @@ import css from "./Header.module.css";
 
 export default function Header() {
   const pathname = usePathname();
+  const isCatalogActive =
+    pathname === "/catalog" || pathname.startsWith("/catalog/");
+
   return (
     <header className={css.header}>
       <div className={css.inner}>
@@ -28,8 +31,8 @@ export default function Header() {
             </li>
             <li className={css.item}>
               <Link
-                className={pathname === "/catalog" ? css.active : css.link}
-                aria-current={pathname === "/catalog" ? "page" : undefined}
+                className={isCatalogActive ? css.active : css.link}
+                aria-current={isCatalogActive ? "page" : undefined}
                 href="/catalog"
               >
                 Catalog
