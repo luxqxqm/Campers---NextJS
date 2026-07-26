@@ -1,0 +1,49 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    z-index: 9999;
+}
+
+.modal {
+    width: 543px;
+
+    background: #fff;
+    border-radius: 20px;
+
+    padding: 48px 96px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}

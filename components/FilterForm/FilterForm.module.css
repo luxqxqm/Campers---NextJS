@@ -1,0 +1,139 @@
+.form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--inputs);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="radio"]:checked {
+  accent-color: var(--text);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.inputShell {
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: var(--inputs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputIcon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--main);
+  font-size: 16px;
+}
+
+
+
+.sectionTitle {
+  color: var(--main);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend {
+  margin-bottom: 2px;
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--main);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.radio input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--main);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.actions span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--main);
+}
+
+.searchBtn,
+.clearBtn {
+  height: 56px;
+  border-radius: 999px;
+  font-size: 16px;
+}
+
+.searchBtn {
+  border: 0;
+  background: var(--grey-green);
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+.clearBtn {
+  border: 1px solid var(--gray-light);
+  background: var(--white);
+  color: var(--main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.clearIcon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
