@@ -20,5 +20,10 @@ export function formatAmenitiesValue(value: string) {
   if(value === "kitchen") return "Kitchen"
   if(value === "radio") return "Radio"
   if(value === "refrigerator") return "Refrigerator"
-  if(value === "water") return "Water"
+  if (value === "water") return "Water"
+  if (value === "tv") return "TV"
+  if (value === "radio") return "Radio"
+  if (value === "microwave") return "Microwave"
+  if(value === "gas") return "Gas"
+
 } 
