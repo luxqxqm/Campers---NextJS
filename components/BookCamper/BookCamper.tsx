@@ -20,6 +20,7 @@ const initialValues: BookingRequest = {
 
 const Schema = Yup.object().shape({
   name: Yup.string()
+    .trim()
     .required("Please enter your name.")
     .min(2, "Name must be at least 2 characters")
     .max(30, "Name is too long"),
@@ -85,7 +86,7 @@ export default function BookCamper({ camperId }: BookCamperProps) {
                 width={18}
                 height={18}
               >
-                <use href="/icons/sprite.svg#icon-error" />
+                <use href="/icons/sprite.svg#error" />
               </svg>
             ) : null}
           </div>
@@ -117,7 +118,7 @@ export default function BookCamper({ camperId }: BookCamperProps) {
               >
                 <use href="/icons/sprite.svg#error" />
               </svg>
-              ) : null}
+            ) : null}
           </div>
 
           {errors.email?.message ? (

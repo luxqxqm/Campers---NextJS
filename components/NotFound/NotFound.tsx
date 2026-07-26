@@ -35,7 +35,7 @@ export default function NotFound({ onChange }: NotFoundProps) {
           }
         >
           <svg className={css.clearIcon} id="icon-close" width={16} height={16}>
-            <use href="/icons/sprite.svg#icon-close" />
+            <use href="/icons/sprite.svg#crist" />
           </svg>
           <span>Clear filters</span>
         </button>
