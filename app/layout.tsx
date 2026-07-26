@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,6 +30,7 @@ export default function RootLayout({
         <TanStackProvider>
           <Header />
           {children}
+          <ToastContainer position="top-right" autoClose={3000} />
         </TanStackProvider>
       </body>
     </html>

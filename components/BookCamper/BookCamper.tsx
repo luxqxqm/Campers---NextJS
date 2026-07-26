@@ -5,6 +5,7 @@ import type { BookingRequest } from "@/types/api";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import * as Yup from "yup";
 import css from "./BookCamper.module.css";
 
@@ -43,13 +44,17 @@ export default function BookCamper({ camperId }: BookCamperProps) {
   const mutation = useMutation({
     mutationFn: (newRent: BookingRequest) => postCamper(camperId, newRent),
     onSuccess: () => {
+      toast.success("Booking request sent successfully.");
       queryClient.invalidateQueries({ queryKey: ["campers"] });
+      reset();
+    },
+    onError: () => {
+      toast.error("Something went wrong. Please try again.");
     },
   });
 
   const onSubmit = (values: BookingRequest) => {
     mutation.mutate(values);
-    reset();
   };
 
   return (
