@@ -10,7 +10,7 @@ export default function Header() {
     pathname === "/catalog" || pathname.startsWith("/catalog/");
 
   return (
-    <header className={css.header}>
+    <header className={`${css.header} ${isCatalogActive ? css.catalogHeader : ""}`}>
       <div className={css.inner}>
         <Link href="/" className={css.brand}>
           <svg className={css.image} id="icon-Logo" width={136} height={16}>

@@ -11,7 +11,7 @@ export default function NotFound({ onChange }: NotFoundProps) {
     <section className={css.error}>
       <Image
         className={css.image}
-        src={"/images/NotFound.png"}
+        src={"/images/Campervan.png"}
         alt="Error Image"
         width={488}
         height={463}
