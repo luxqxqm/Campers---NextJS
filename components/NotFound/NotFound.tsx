@@ -11,7 +11,7 @@ export default function NotFound({ onChange }: NotFoundProps) {
     <section className={css.error}>
       <Image
         className={css.image}
-        src={"/images/NotFoundImage.png"}
+        src={"/images/NotFound.png"}
         alt="Error Image"
         width={488}
         height={463}
@@ -35,7 +35,7 @@ export default function NotFound({ onChange }: NotFoundProps) {
           }
         >
           <svg className={css.clearIcon} id="icon-close" width={16} height={16}>
-            <use href="/icons/sprite.svg#crist" />
+            <use href="/icons/sprite.svg#icon-close" />
           </svg>
           <span>Clear filters</span>
         </button>

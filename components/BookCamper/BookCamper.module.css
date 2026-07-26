@@ -62,7 +62,7 @@
 }
 
 .input::placeholder {
-  color: var(--text);
+  color: var(--gray);
 }
 
 .input:focus {
@@ -100,7 +100,11 @@
   color: var(--white);
   font-size: 16px;
   line-height: 1;
-  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--green-hover);
 }
 
 .button:disabled {

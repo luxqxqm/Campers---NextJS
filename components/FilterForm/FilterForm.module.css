@@ -49,6 +49,10 @@ input[type="radio"]:checked {
   font-size: 16px;
 }
 
+.input::placeholder {
+  color: var(--gray);
+}
+
 
 
 .sectionTitle {
@@ -117,6 +121,11 @@ input[type="radio"]:checked {
   color: var(--white);
   font-family: var(--font-family);
   font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.searchBtn:hover:not(:disabled) {
+  background: var(--green-hover);
 }
 
 .clearBtn {
@@ -130,6 +139,16 @@ input[type="radio"]:checked {
   font-family: var(--font-family);
   font-weight: 500;
   letter-spacing: -0.01em;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.clearBtn:hover:not(:disabled) {
+  border-color: var(--green-hover);
+  color: var(--green-hover);
+  background: var(--inputs);
 }
 
 .clearIcon {
