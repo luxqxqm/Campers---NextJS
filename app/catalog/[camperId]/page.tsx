@@ -14,7 +14,6 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { camperId } = await params;
   const camper = await getCamperById(camperId);
-  console.log("camperId:", camperId);
   return {
     title: `${camper.name} | TravelTrucks`,
     description: camper.description,

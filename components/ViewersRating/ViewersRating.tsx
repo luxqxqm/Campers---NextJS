@@ -13,11 +13,11 @@ export default function ViewersRating({ camperId }: ViewerProps) {
   });
 
   return (
-    <div className={css.list}>
+    <ul className={css.list}>
       {data &&
         data.map((viewer) => {
           return (
-            <div className={css.container} key={viewer.id}>
+            <li className={css.container} key={viewer.id}>
               <div className={css.contact}>
                 <span className={css.image}>
                   {viewer.reviewer_name.slice(0, 1)}
@@ -38,9 +38,9 @@ export default function ViewersRating({ camperId }: ViewerProps) {
               </div>
 
               <p className={css.coments}>{viewer.comment}</p>
-            </div>
+            </li>
           );
         })}
-    </div>
+    </ul>
   );
 }
