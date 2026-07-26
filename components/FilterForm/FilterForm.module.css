@@ -5,7 +5,7 @@
   background: var(--inputs);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 input[type="radio"]:checked {
@@ -20,7 +20,7 @@ input[type="radio"]:checked {
 
 .label {
   color: var(--gray);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -57,7 +57,7 @@ input[type="radio"]:checked {
 
 .sectionTitle {
   color: var(--main);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   font-weight: 600;
 }
@@ -74,8 +74,10 @@ input[type="radio"]:checked {
 .legend {
   margin-bottom: 2px;
   color: var(--gray);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
+  padding: 0;
+  margin-bottom: 8px;
 }
 
 .radio {
@@ -83,7 +85,7 @@ input[type="radio"]:checked {
   align-items: center;
   gap: 8px;
   color: var(--main);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
